@@ -1,7 +1,7 @@
 # Projecte Vagrant
 # Pràctica 17
 
-Aquesta és la nostra pràctica de Vagrant i explicació per a preparar i provisionar una màquina Linux amb els seu servei LAMP amb una aplicació d'administració de MYSQL usant ADMINER 
+Aquesta és la pràctica de Vagrant i explicació per a preparar i provisionar una màquina Linux amb els seu servei LAMP amb una aplicació d'administració de MYSQL usant ADMINER 
 
 ## Inici
 
