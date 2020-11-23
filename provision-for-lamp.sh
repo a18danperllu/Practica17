@@ -22,7 +22,10 @@ apt-get install -y mysql-server
 #Indiquem que es pugui connectar des de qualsevol lloc al servidor Mysql
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
 
+#Reinicio el servei
 /etc/init.d/mysql restart
+
+#Comprovo com es troba el servei
 /etc/init.d/mysql status
 
 #Assignem tots els permisos per a l'usuari root
