@@ -174,8 +174,3 @@ mysql -u root mysql -p $DB_ROOT_PASSWD <<< "CREATE DATABASE projecte17;"
 
 
 ```
-## Autors
-
-* **Javier Úbeda** - *Initial work* - [PurpleBooth](https://github.com/javuberay)
-
-* **Tomàs Silva** - *Initial work* - [PurpleBooth](https://github.com/tsilvacerro)
