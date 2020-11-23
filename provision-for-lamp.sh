@@ -20,7 +20,10 @@ debconf-set-selections <<< "mysql-server mysql-server/root_password_again passwo
 apt-get install -y mysql-server
 
 #Indiquem que es pugui connectar des de qualsevol lloc al servidor Mysql
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf /etc/init.d/mysql restart
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
+
+/etc/init.d/mysql restart
+/etc/init.d/mysql status
 
 #Assignem tots els permisos per a l'usuari root
 mysql -u root mysql -p $DB_ROOT_PASSWD <<< "GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY '$DB_ROOT_PASSWD';FLUSH PRIVILEGES;"
